@@ -39,24 +39,24 @@ export default function Services({ serviceArea, onQuote }) {
   ]
 
   return (
-    <section className="bg-slate-950 text-white">
+    <section className="bg-white text-slate-900">
       <div className="mx-auto max-w-7xl px-6 py-20">
         <div className="max-w-3xl">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Electrical Services We Offer</h2>
-          <p className="mt-4 text-slate-300">
+          <p className="mt-4 text-slate-600">
             We cover all your electrical needs across {serviceArea}, whether it’s for your home, business, or industrial site.
           </p>
         </div>
 
         <div className="mt-10 grid gap-6 lg:grid-cols-2">
           {sections.map((group) => (
-            <div key={group.heading} className="rounded-xl border border-white/10 bg-white/5 p-6">
+            <div key={group.heading} className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
               <h3 className="text-xl font-semibold">{group.heading}</h3>
               <ul className="mt-4 space-y-4">
                 {group.items.map((it) => (
                   <li key={it.title}>
                     <p className="font-medium">{it.title}</p>
-                    <p className="text-slate-300">{it.desc}</p>
+                    <p className="text-slate-600">{it.desc}</p>
                   </li>
                 ))}
               </ul>
@@ -65,7 +65,7 @@ export default function Services({ serviceArea, onQuote }) {
         </div>
 
         <div className="mt-10">
-          <button onClick={onQuote} className="rounded-xl bg-sky-500 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-sky-500/25 transition hover:bg-sky-400 focus:outline-none focus:ring-2 focus:ring-sky-300">
+          <button onClick={onQuote} className="rounded-xl bg-sky-600 px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-sky-500 focus:outline-none focus:ring-2 focus:ring-sky-300">
             Get a Free Quote
           </button>
         </div>

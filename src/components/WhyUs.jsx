@@ -2,11 +2,11 @@ import React from 'react'
 
 export default function WhyUs({ companyName }) {
   return (
-    <section className="relative bg-slate-900 text-white">
+    <section className="relative bg-slate-50 text-slate-900">
       <div className="mx-auto max-w-7xl px-6 py-20">
         <div className="max-w-3xl">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Why Choose {companyName}?</h2>
-          <p className="mt-4 text-slate-300">
+          <p className="mt-4 text-slate-600">
             At {companyName}, we treat every job like it’s in our own home. Combining years of experience, certifications, and a personal approach, we ensure every project is completed safely and to the highest standards.
           </p>
         </div>
@@ -25,9 +25,9 @@ export default function WhyUs({ companyName }) {
             { title: 'Flexible & Responsive', desc: 'Rapid response times with convenient scheduling.' },
             { title: 'Customer‑Centric', desc: 'Friendly service, clear communication, and attention to detail.' },
           ].map((item) => (
-            <div key={item.title} className="rounded-xl border border-white/10 bg-white/5 p-6">
+            <div key={item.title} className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
               <h3 className="text-lg font-semibold">{item.title}</h3>
-              <p className="mt-2 text-slate-300">{item.desc}</p>
+              <p className="mt-2 text-slate-600">{item.desc}</p>
             </div>
           ))}
         </div>

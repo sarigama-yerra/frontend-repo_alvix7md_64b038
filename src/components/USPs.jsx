@@ -9,14 +9,14 @@ export default function USPs() {
     { title: 'Friendly, Local Service', desc: 'Experienced electricians who care about your property.' },
   ]
   return (
-    <section className="bg-slate-950 text-white">
+    <section className="bg-white text-slate-900">
       <div className="mx-auto max-w-7xl px-6 py-20">
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Why Our Customers Keep Coming Back</h2>
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {points.map((p) => (
-            <div key={p.title} className="rounded-xl border border-white/10 bg-white/5 p-6">
+            <div key={p.title} className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
               <p className="font-semibold">{p.title}</p>
-              <p className="text-slate-300">{p.desc}</p>
+              <p className="text-slate-600">{p.desc}</p>
             </div>
           ))}
         </div>
